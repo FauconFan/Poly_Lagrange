@@ -14,7 +14,7 @@ def print_poly(li):
                 ma = len(li) - 1
                 if i != ma:
                     s = s + " * X"
-                    if i < ma:
+                    if i < ma - 1:
                         s = s + "^" + str(ma - i)
                 st_monomes.append(s)
         st = st + " + ".join(st_monomes)
